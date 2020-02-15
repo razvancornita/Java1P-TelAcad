@@ -1,10 +1,10 @@
-package Exercitii;
+package Stream.Exercitii;
 
-import dto.OrderDto;
-import entity.Customer;
-import entity.Order;
-import entity.OrderLine;
-import entity.Product;
+import Stream.dto.OrderDto;
+import Stream.entity.Customer;
+import Stream.entity.Order;
+import Stream.entity.OrderLine;
+import Stream.entity.Product;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.SortedSet;
 
-import static entity.Order.PaymentMethod;
+import static Stream.entity.Order.PaymentMethod;
 
 public class TransformStreamExercises {
 

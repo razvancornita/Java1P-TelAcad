@@ -1,9 +1,9 @@
-package Teste;
+package Stream.Teste;
 
-import Exercitii.SearchStreamExercises;
-import entity.Customer;
-import entity.Order;
-import entity.OrderLine;
+import Stream.Exercitii.SearchStreamExercises;
+import Stream.entity.Customer;
+import Stream.entity.Order;
+import Stream.entity.OrderLine;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import static entity.Order.Status;
+import static Stream.entity.Order.Status;
 import static java.time.LocalDate.now;
 
 public class SearchStreamsTest {

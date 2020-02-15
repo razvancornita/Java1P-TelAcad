@@ -1,4 +1,4 @@
-package entity;
+package Stream.entity;
 
 public class Product {
 

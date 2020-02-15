@@ -1,4 +1,4 @@
-package entity;
+package Stream.entity;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,6 +1,6 @@
-package dto;
+package Stream.dto;
 
-import entity.Audit.Action;
+import Stream.entity.Audit.Action;
 
 import java.time.LocalDate;
 

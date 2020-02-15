@@ -1,4 +1,4 @@
-package entity;
+package Stream.entity;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

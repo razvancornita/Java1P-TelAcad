@@ -1,7 +1,7 @@
-package Exercitii;
+package Stream.Exercitii;
 
-import entity.Customer;
-import entity.Order;
+import Stream.entity.Customer;
+import Stream.entity.Order;
 
 import java.util.List;
 
