@@ -18,59 +18,28 @@ import static Stream.entity.Order.PaymentMethod;
 
 public class TransformStreamExercises {
 
-    //TODO: return the Order in the list with the given id
-    public Order e1_getOrderById(Customer customer) {
-        return null;
-    }
-
-
-    //TODO: return true if customer has at least one order with status ACTIVE
-    public boolean e2_hasActiveOrders(Customer customer) {
-        return false;
-    }
-
-
-    //TODO: an Order can be returned if it doesn't contain any OrderLine with isSpecialOffer()==true
-    public boolean e3_canBeReturned(Order order) {
-        return false;
-    }
-
-
-    // TODO: return the Order with maximum getTotalPrice (the most expensive Order, or null if no Orders)
-    // TODO Challenge: return an Optional<creationDate>
-    public Order e4_getMaxPriceOrder(Customer customer) {
-        return null;
-    }
-
-
-    //TODO: return last 3 Orders sorted descending by creationDate
-    public List<Order> p5_getLast3Orders(Customer customer) {
-        return null;
-    }
-
-
-    //TODO: transform all entities to DTOs - at least 2 methods, try to make it clean!
+    // TODO: transform all entities to DTOs - at least 2 methods, try to make it clean!
     public List<OrderDto> e1_toDtos(List<Order> orders) {
         return null;
     }
 
-    //TODO: return a Set of all the payment methods
+    // TODO: return a Set of all the payment methods
     public Set<PaymentMethod> e2_getUsedPaymentMethods(Customer customer) {
         return null;
     }
 
-    //TODO: return a SortedSet of all the creationDates of the Orders - 2 methods for collection
+    // TODO: return a SortedSet of all the creationDates of the Orders - 2 methods for collection
     public SortedSet<LocalDate> e3_getOrderDatesAscending(Customer customer) {
         return null;
     }
 
 
-    //TODO: return a map of (order.id -> order) - 2 methods
+    // TODO: return a map of (order.id -> order) - 2 methods
     public Map<Long, Order> e4_mapOrdersById(Customer customer) {
         return null;
     }
 
-    //TODO: return a map of (PaymentMethod, List<Order> - orders, grouped by Order.paymentMethod
+    // TODO: return a map of (PaymentMethod, List<Order> - orders, grouped by Order.paymentMethod
     public Map<PaymentMethod, List<Order>> e5_getProductsByPaymentMethod(Customer customer) {
         return null;
     }
@@ -88,18 +57,12 @@ public class TransformStreamExercises {
     }
 
 
-    //TODO: return all the unique products bought by the customer, sorted by Product.name
+    // TODO: return all the unique products bought by the customer, sorted by Product.name
     public List<Product> e7_getAllOrderedProducts(Customer customer) {
         return null;
     }
 
 
-    /**
-     * The names of all the products bought by Customer,
-     * sorted and then concatenated by ",".
-     * Example: "Armchair,Chair,Table".
-     * Hint: Reuse the previous function.
-     */
     /*
         TODO: return the names of all the products bought by Customer, sorted and then concatenated by ",".
         example: "Armchair,Chair,Table"
@@ -109,7 +72,8 @@ public class TransformStreamExercises {
         return null;
     }
 
-    //TODO: return the sum of all Order.getTotalPrice(), truncated to Long.
+
+    // TODO: return the sum of all Order.getTotalPrice(), truncated to Long.
     public long e9_getApproximateTotalOrdersPrice(Customer customer) {
         return 0;
     }
@@ -128,6 +92,13 @@ public class TransformStreamExercises {
         return null;
     }
 
+    // TODO: print cannonical paths of all files in current directory
+    public void e11_printCannonicalPaths() {
+
+    }
+
+
+
     private OrderLine parseOrderLine(String[] cells) {
         return new OrderLine(new Product(cells[1]), Integer.parseInt(cells[2]));
     }
@@ -136,11 +107,5 @@ public class TransformStreamExercises {
         if (orderLine.getCount() < 0) {
             throw new IllegalArgumentException("Negative items");
         }
-    }
-
-
-    //TODO: print cannonical paths of all files in current directory
-    public void e11_printCannonicalPaths() {
-
     }
 }

@@ -7,19 +7,19 @@ import java.util.List;
 
 public class SearchStreamExercises {
 
-    //TODO: return the Order in the list with the given id
+    // TODO: return the Order in the list with the given id
     public Order e1_getOrderById(List<Order> orders, long orderId) {
        return null;
     }
 
 
-    //TODO: return true if customer has at least one order with status ACTIVE
+    // TODO: return true if customer has at least one order with status ACTIVE
     public boolean e2_hasActiveOrders(Customer customer) {
         return false;
     }
 
 
-    //TODO: an Order can be returned if it doesn't contain any OrderLine with isSpecialOffer()==true
+    // TODO: an Order can be returned if it doesn't contain any OrderLine with isSpecialOffer()==true
     public boolean e3_canBeReturned(Order order) {
         return false;
     }
@@ -32,7 +32,7 @@ public class SearchStreamExercises {
     }
 
 
-    //TODO: return last 3 Orders sorted descending by creationDate
+    // TODO: return last 3 Orders sorted descending by creationDate
     public List<Order> e5_getLast3Orders(Customer customer) {
         return null;
     }
