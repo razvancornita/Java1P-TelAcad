@@ -30,7 +30,6 @@ public class SearchStreamsTest {
         System.out.println(generateMessage(e5_getLast3Orders() && e5_getLast3Orders_whenNoOrders() && e5_getLast3Orders_whenOnlyTwoOrders(), 5));
     }
 
-
     private static boolean e1_getOrderById() {
         List<Order> orders = Arrays.asList(new Order(1L), new Order(2L), new Order(3L));
         Order order = service.e1_getOrderById(orders, 2L);
@@ -97,9 +96,6 @@ public class SearchStreamsTest {
     }
 
     private static boolean e5_getLast3Orders_whenNoOrders() {
-        Customer customer = new Customer();
-        return Collections.emptyList().equals(service.e5_getLast3Orders(customer));
+        return Collections.emptyList().equals(service.e5_getLast3Orders(new Customer()));
     }
-
-
 }

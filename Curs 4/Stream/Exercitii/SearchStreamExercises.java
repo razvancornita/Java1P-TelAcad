@@ -36,4 +36,5 @@ public class SearchStreamExercises {
     public List<Order> e5_getLast3Orders(Customer customer) {
         return null;
     }
+
 }
