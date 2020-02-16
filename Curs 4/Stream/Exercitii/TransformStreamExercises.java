@@ -1,10 +1,6 @@
 package Stream.Exercitii;
 
-import Stream.dto.OrderDto;
-import Stream.entity.Customer;
-import Stream.entity.Order;
-import Stream.entity.OrderLine;
-import Stream.entity.Product;
+import Stream.entity.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,7 +15,7 @@ import static Stream.entity.Order.PaymentMethod;
 public class TransformStreamExercises {
 
     // TODO: transform all entities to DTOs - at least 2 methods, try to make it clean!
-    public List<OrderDto> e1_toDtos(List<Order> orders) {
+    public List<OrderDTO> e1_toDtos(List<Order> orders) {
         return null;
     }
 
@@ -56,12 +52,10 @@ public class TransformStreamExercises {
         return null;
     }
 
-
     // TODO: return all the unique products bought by the customer, sorted by Product.name
     public List<Product> e7_getAllOrderedProducts(Customer customer) {
         return null;
     }
-
 
     /*
         TODO: return the names of all the products bought by Customer, sorted and then concatenated by ",".
@@ -71,7 +65,6 @@ public class TransformStreamExercises {
     public String e8_getProductsJoined(Customer customer) {
         return null;
     }
-
 
     // TODO: return the sum of all Order.getTotalPrice(), truncated to Long.
     public long e9_getApproximateTotalOrdersPrice(Customer customer) {

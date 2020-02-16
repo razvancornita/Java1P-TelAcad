@@ -1,14 +1,14 @@
-package Stream.dto;
+package Stream.entity;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public class OrderDto {
+public class OrderDTO {
 
     public BigDecimal totalPrice;
     public LocalDate creationDate;
 
-    public OrderDto() {
+    public OrderDTO() {
     }
 
 	/*
