@@ -26,20 +26,16 @@ public class TransactionPlayTest {
 
     static Transaction[] tx = transactions.toArray(new Transaction[0]);
 
-    private static String generateMessage(boolean value, int nr) {
-        return value ? "Exercise " + nr + " completed! :)" : "Exercise " + nr + " failed :(";
-    }
-
     public static void main(String[] args) {
-        System.out.println(generateMessage(e1_getAllTransactionsFrom2011SortedByValue(), 1));
-        System.out.println(generateMessage(e2_getUniqueCitiesOfTheTraders(), 2));
-        System.out.println(generateMessage(e3_getTradersFromCambridgeSortedByName(), 3));
-        System.out.println(generateMessage(e4_getNamesOfAllTradersSortedJoined(), 4));
-        System.out.println(generateMessage(e5_areTradersInMilan(), 5));
-        System.out.println(generateMessage(e6_getSumOfValuesOfTransactionsFromCambridgeTraders(), 6));
-        System.out.println(generateMessage(e7_getMaxTransactionValue(), 7));
-        System.out.println(generateMessage(e8_getTransactionWithSmallestValue(), 8));
-        System.out.println(generateMessage(e9_getATransactionFrom2012(), 9));
+        System.out.println(TestUtil.generateMessage(e1_getAllTransactionsFrom2011SortedByValue(), 1));
+        System.out.println(TestUtil.generateMessage(e2_getUniqueCitiesOfTheTraders(), 2));
+        System.out.println(TestUtil.generateMessage(e3_getTradersFromCambridgeSortedByName(), 3));
+        System.out.println(TestUtil.generateMessage(e4_getNamesOfAllTradersSortedJoined(), 4));
+        System.out.println(TestUtil.generateMessage(e5_areTradersInMilan(), 5));
+        System.out.println(TestUtil.generateMessage(e6_getSumOfValuesOfTransactionsFromCambridgeTraders(), 6));
+        System.out.println(TestUtil.generateMessage(e7_getMaxTransactionValue(), 7));
+        System.out.println(TestUtil.generateMessage(e8_getTransactionWithSmallestValue(), 8));
+        System.out.println(TestUtil.generateMessage(e9_getATransactionFrom2012(), 9));
     }
 
 

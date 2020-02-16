@@ -22,21 +22,17 @@ public class TransformStreamsTest {
     private static LocalDate today = LocalDate.now();
     private static LocalDate yesterday = LocalDate.now().minusDays(1);
 
-    private static String generateMessage(boolean value, int nr) {
-        return value ? "Exercise " + nr + " completed! :)" : "Exercise " + nr + " failed :(";
-    }
-
     public static void main(String[] args) {
-        System.out.println(generateMessage(e1_toDtos(), 1));
-        System.out.println(generateMessage(e2_getUsedPaymentMethods(), 2));
-        System.out.println(generateMessage(e3_getOrderDatesAscending(), 3));
-        System.out.println(generateMessage(e4_mapOrdersById(), 4));
-        System.out.println(generateMessage(e5_getProductsByPaymentMethod(), 5));
-        System.out.println(generateMessage(e6_getProductCount(), 6));
-        System.out.println(generateMessage(e7_getAllOrderedProducts(), 7));
-        System.out.println(generateMessage(e8_getProductsNamesJoined(), 8));
-        System.out.println(generateMessage(e9_getApproximateTotalOrdersPrice(), 9));
-        System.out.println(generateMessage(e10_readOrderFromFile(), 10));
+        System.out.println(TestUtil.generateMessage(e1_toDtos(), 1));
+        System.out.println(TestUtil.generateMessage(e2_getUsedPaymentMethods(), 2));
+        System.out.println(TestUtil.generateMessage(e3_getOrderDatesAscending(), 3));
+        System.out.println(TestUtil.generateMessage(e4_mapOrdersById(), 4));
+        System.out.println(TestUtil.generateMessage(e5_getProductsByPaymentMethod(), 5));
+        System.out.println(TestUtil.generateMessage(e6_getProductCount(), 6));
+        System.out.println(TestUtil.generateMessage(e7_getAllOrderedProducts(), 7));
+        System.out.println(TestUtil.generateMessage(e8_getProductsNamesJoined(), 8));
+        System.out.println(TestUtil.generateMessage(e9_getApproximateTotalOrdersPrice(), 9));
+        System.out.println(TestUtil.generateMessage(e10_readOrderFromFile(), 10));
     }
 
     private static boolean e1_toDtos() {

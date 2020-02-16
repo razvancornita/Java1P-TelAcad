@@ -18,16 +18,12 @@ public class SearchStreamsTest {
 
     private static SearchStreamExercises service = new SearchStreamExercises();
 
-    private static String generateMessage(boolean value, int nr) {
-        return value ? "Exercise " + nr + " completed! :)" : "Exercise " + nr + " failed :(";
-    }
-
     public static void main(String[] args) {
-        System.out.println(generateMessage(e1_getOrderById(), 1));
-        System.out.println(generateMessage(e2_hasActiveOrders_false() && e2_hasActiveOrders_true() && e2_getOrderById_whenIdNotFound(), 2));
-        System.out.println(generateMessage(e3_canBeReturned_false() && e3_canBeReturned_true(), 3));
-        System.out.println(generateMessage(e4_getMaxPriceOrder() && e4_getMaxPriceOrder_whenNoOrders_returnsNothing(), 4));
-        System.out.println(generateMessage(e5_getLast3Orders() && e5_getLast3Orders_whenNoOrders() && e5_getLast3Orders_whenOnlyTwoOrders(), 5));
+        System.out.println(TestUtil.generateMessage(e1_getOrderById() && e1_getOrderById_whenIdNotFound(), 1));
+        System.out.println(TestUtil.generateMessage(e2_hasActiveOrders_false() && e2_hasActiveOrders_true(), 2));
+        System.out.println(TestUtil.generateMessage(e3_canBeReturned_false() && e3_canBeReturned_true(), 3));
+        System.out.println(TestUtil.generateMessage(e4_getMaxPriceOrder() && e4_getMaxPriceOrder_whenNoOrders_returnsNothing(), 4));
+        System.out.println(TestUtil.generateMessage(e5_getLast3Orders() && e5_getLast3Orders_whenNoOrders() && e5_getLast3Orders_whenOnlyTwoOrders(), 5));
     }
 
     private static boolean e1_getOrderById() {
@@ -37,7 +33,7 @@ public class SearchStreamsTest {
         return (order != null) && (2L == order.getId());
     }
 
-    private static boolean e2_getOrderById_whenIdNotFound() {
+    private static boolean e1_getOrderById_whenIdNotFound() {
         List<Order> orders = Arrays.asList(new Order(1L));
         return service.e1_getOrderById(orders, 1000L) == null;
     }
