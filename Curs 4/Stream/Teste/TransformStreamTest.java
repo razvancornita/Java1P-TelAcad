@@ -11,7 +11,7 @@ import java.util.*;
 
 import static Stream.entity.Order.PaymentMethod;
 
-public class TransformStreamsTest {
+public class TransformStreamTest {
 
     private static TransformStreamExercises service = new TransformStreamExercises();
 

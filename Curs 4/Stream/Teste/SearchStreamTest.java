@@ -14,7 +14,7 @@ import java.util.List;
 import static Stream.entity.Order.Status;
 import static java.time.LocalDate.now;
 
-public class SearchStreamsTest {
+public class SearchStreamTest {
 
     private static SearchStreamExercises service = new SearchStreamExercises();
 
