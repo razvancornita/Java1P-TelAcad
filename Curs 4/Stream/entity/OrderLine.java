@@ -3,7 +3,6 @@ package Stream.entity;
 public class OrderLine {
 	
 	public enum Status {
-		IN_STOCK, OUT_OF_STOCK, WAITING_FOR_STOCK
 	}
 
 	private Product product;

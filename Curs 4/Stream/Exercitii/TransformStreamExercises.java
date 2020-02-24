@@ -1,10 +1,6 @@
 package Stream.Exercitii;
 
-import Stream.dto.OrderDto;
-import Stream.entity.Customer;
-import Stream.entity.Order;
-import Stream.entity.OrderLine;
-import Stream.entity.Product;
+import Stream.entity.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,7 +15,7 @@ import static Stream.entity.Order.PaymentMethod;
 public class TransformStreamExercises {
 
     // TODO: transform all entities to DTOs - at least 2 methods, try to make it clean!
-    public List<OrderDto> e1_toDtos(List<Order> orders) {
+    public List<OrderDTO> e1_toDtos(List<Order> orders) {
         return null;
     }
 

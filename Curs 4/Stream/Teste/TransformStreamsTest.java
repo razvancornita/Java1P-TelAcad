@@ -1,11 +1,7 @@
 package Stream.Teste;
 
 import Stream.Exercitii.TransformStreamExercises;
-import Stream.dto.OrderDto;
-import Stream.entity.Customer;
-import Stream.entity.Order;
-import Stream.entity.OrderLine;
-import Stream.entity.Product;
+import Stream.entity.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -39,7 +35,7 @@ public class TransformStreamsTest {
         Order order1 = new Order().setCreationDate(today).setTotalPrice(BigDecimal.TEN);
         Order order2 = new Order().setCreationDate(yesterday).setTotalPrice(BigDecimal.ONE);
 
-        List<OrderDto> dtos = service.e1_toDtos(Arrays.asList(order1, order2));
+        List<OrderDTO> dtos = service.e1_toDtos(Arrays.asList(order1, order2));
 
         return (dtos != null) && (!dtos.isEmpty())
                 && (today.equals(dtos.get(0).creationDate)
@@ -95,7 +91,7 @@ public class TransformStreamsTest {
         );
 
         Map<Product, Long> actual = service.e6_getProductCount(new Customer(order1, order2));
-        Map<Product, Long> expected = new HashMap<>() {{
+        Map<Product, Long> expected = new HashMap<Product, Long>() {{
             put(chair, 4L);
             put(table, 1L);
         }};

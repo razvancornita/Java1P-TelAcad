@@ -1,12 +1,11 @@
 package Stream.entity;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Customer {
 
-	private List<Order> orders = new ArrayList<>();
+	private List<Order> orders;
 
 	public List<Order> getOrders() {
 		return orders;

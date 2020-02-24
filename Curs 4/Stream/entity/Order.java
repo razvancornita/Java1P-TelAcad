@@ -12,12 +12,11 @@ import static java.util.stream.Collectors.joining;
 public class Order {
 
 	public enum Status {
-		DRAFT, ACTIVE, INACTIVE
+		ACTIVE, INACTIVE
 	}
 	
 	public enum PaymentMethod {
 		CARD,
-		CASH_ON_SITE,
 		CASH_ON_DELIVERY
 	}
 	
