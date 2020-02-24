@@ -35,7 +35,7 @@ public class SearchStreamTest {
 
     private static boolean e1_getOrderById_whenIdNotFound() {
         List<Order> orders = Arrays.asList(new Order(1L));
-        return service.e1_getOrderById(orders, 1000L) == null;
+        return service.e1_getOrderById(orders, 1000L).equals(new Order());
     }
 
     private static boolean e2_hasActiveOrders_true() {
