@@ -21,6 +21,7 @@ public class BeforeAfterJava8 {
     }
 
 
+    //hint: Collections.sort(collection, comparator);
     static List<String> beforeJava8(List<Dish> menu) {
         return Collections.emptyList();
     }
