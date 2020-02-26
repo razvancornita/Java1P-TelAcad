@@ -11,7 +11,7 @@ import java.util.*;
 
 import static Stream.entity.Order.PaymentMethod;
 
-public class TransformStreamsTest {
+public class TransformStreamTest {
 
     private static TransformStreamExercises service = new TransformStreamExercises();
 
@@ -91,7 +91,7 @@ public class TransformStreamsTest {
         );
 
         Map<Product, Long> actual = service.e6_getProductCount(new Customer(order1, order2));
-        Map<Product, Long> expected = new HashMap<>() {{
+        Map<Product, Long> expected = new HashMap<Product, Long>() {{
             put(chair, 4L);
             put(table, 1L);
         }};

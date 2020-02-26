@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 import static java.util.stream.Collectors.joining;
 
@@ -12,12 +13,11 @@ import static java.util.stream.Collectors.joining;
 public class Order {
 
 	public enum Status {
-		DRAFT, ACTIVE, INACTIVE
+		ACTIVE, INACTIVE
 	}
 	
 	public enum PaymentMethod {
 		CARD,
-		CASH_ON_SITE,
 		CASH_ON_DELIVERY
 	}
 	
@@ -30,6 +30,21 @@ public class Order {
 	
 	private LocalDate deliveryDueDate;
 	private Customer customer;
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Order order = (Order) o;
+		return Objects.equals(id, order.id) &&
+				status == order.status &&
+				Objects.equals(orderLines, order.orderLines) &&
+				Objects.equals(creationDate, order.creationDate) &&
+				Objects.equals(totalPrice, order.totalPrice) &&
+				paymentMethod == order.paymentMethod &&
+				Objects.equals(deliveryDueDate, order.deliveryDueDate) &&
+				Objects.equals(customer, order.customer);
+	}
 
 	public Order() {
 	}
