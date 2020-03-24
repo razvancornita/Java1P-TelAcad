@@ -36,7 +36,7 @@ public class TransactionPlay {
     // TODO: returns the maximum value of all the transactions
     public int e7_getMaxTransactionValue(List<Transaction> transactions) { return 0; }
 
-    // TODO: returns the maximum value of all the transactions
+    // TODO: returns the smallest value of all the transactions
     public Transaction e8_getTransactionWithSmallestValue(List<Transaction> transactions) { return null; }
 
     // TODO: returns a transaction from 2012 - Optional??
